@@ -4,6 +4,8 @@ import '../widgets/menu_lateral.dart';
 import '../widgets/sobre_mi.dart';
 import '../widgets/quien_soy.dart';
 import '../widgets/que_hago.dart';
+import '../widgets/hobbies.dart';
+import '../widgets/comentarios.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -21,6 +23,10 @@ class HomeScreen extends StatelessWidget {
           QuienSoy(),
           SizedBox(height: 24),
           QueHago(),
+          SizedBox(height: 24),
+          Hobbies(),
+          SizedBox(height: 24),
+          Comentarios(),
         ],
       ),
     );
