@@ -3,6 +3,7 @@ import '../widgets/mi_appbar.dart';
 import '../widgets/menu_lateral.dart';
 import '../widgets/sobre_mi.dart';
 import '../widgets/quien_soy.dart';
+import '../widgets/que_hago.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,6 +19,8 @@ class HomeScreen extends StatelessWidget {
           SobreMi(),
           SizedBox(height: 32),
           QuienSoy(),
+          SizedBox(height: 24),
+          QueHago(),
         ],
       ),
     );
