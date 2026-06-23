@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../widgets/mi_appbar.dart';
 import '../widgets/menu_lateral.dart';
 import '../widgets/sobre_mi.dart';
+import '../widgets/quien_soy.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,8 +12,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: const MiAppBar(),
       endDrawer: const MenuLateral(),
-      body: const Center(
-        child: SobreMi(),
+      body: ListView(
+        padding: const EdgeInsets.all(16.0),
+        children: const [
+          SobreMi(),
+          SizedBox(height: 32),
+          QuienSoy(),
+        ],
       ),
     );
   }
